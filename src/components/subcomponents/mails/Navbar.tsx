@@ -5,7 +5,7 @@ import { AiOutlineCalendar, AiOutlineMore, AiFillCheckCircle } from 'react-icons
 function Navbar(){
       const [isActive, setIsActive] = useState(false);
 return (
-<div className="flex flex-row shadow-md     border border-b-2 justify-between items-center z-10 fixed w-[750px] bg-white top-1 rounded-t-lg    h-[50px]">
+<div className="flex flex-row shadow-md     border border-b-2 justify-between items-center w-[750px] bg-white  rounded-t-lg    h-[50px]">
  <div className="flex flex-row gap-x-2 ml-3   items-center justify-center  ">
    <span className="text-xl mb-2  ">📨</span>
    <h1 className="font-bold ">All other emails</h1>

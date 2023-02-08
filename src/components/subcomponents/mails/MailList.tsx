@@ -27,7 +27,7 @@ const MailList: React.FC<Props> = ({
 
   return (
     <div className="flex flex-col  ">
-      <div className="flex h-[40px] flex-row w-full justify-start items-center px-[20px]  border-b-2 border-gray-300">
+      <div className="flex h-[40px] flex-row w-full justify-start items-center px-[20px] hover:bg-gray-100 cursor-pointer border-b-2 border-gray-300">
       <img
         src={profilePicture}
         alt={names}

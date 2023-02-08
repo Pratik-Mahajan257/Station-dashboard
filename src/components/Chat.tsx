@@ -34,15 +34,16 @@ const Chat: React.FC<ChatProps> = ({ profilePicture, name }) => {
   };
 
   return (
-    <div className=" w-[420px] bg-white mx-[10px] my-[10px] rounded-lg relative flex flex-col  shadow-xl">
-      <div className="flex flex-col  justify-end h-full mb-12 overflow-y-scroll scrollbar-hide  ">
+    <div className=" w-[420px] bg-white mx-[10px] my-[10px] rounded-lg relative flex flex-col   shadow-xl">
+      <div className="flex flex-col  h-full mb-12 overflow-y-scroll scrollbar-hide justify-end   ">
+
         {messages.map((message, index) => (
-          <div key={index} className="flex flex-row justify-start items-start p-1 mx-3 my-1 ">
+            <div key={index} className="flex flex-row justify-start items-start p-1 mx-3 my-1 ">
             <img
               src={profilePicture}
               alt={`${message.name}'s profile`}
               className="w-6 h-6 rounded-md object-cover"
-            />
+              />
             <div className="ml-4 py-2 pr-8 pl-3 pb-4 w-fit rounded-xl   flex flex-row gap-2 relative justify-start items-center bg-[#f7f7f7]">
               <p className="text-sm font-bold text-blue-600  ">
                 {message.name}
@@ -53,6 +54,7 @@ const Chat: React.FC<ChatProps> = ({ profilePicture, name }) => {
           </div>
         ))}
       </div>
+   
       <div className="flex items-center justify-between shadow-2xl gap-3  outline-none w-full border-gray-300 absolute bottom-0 left-0 ">
         <input
           type="text"

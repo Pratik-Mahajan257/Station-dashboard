@@ -11,7 +11,7 @@ function Sidebar() {
 const [showYellow, setShowYellow] = useState(false);
 
   return <div className='bg-[#FFFFFF] h-full w-[50px] flex flex-col
-  justify-between border-gray-300 border-r-[1px] items-center     '>
+  justify-between border-gray-300 border-r-[1px] items-center col-span-1      '>
 <div className='flex justify-center items-center flex-col gap-y-8   '>
     <div className='h-[34px] w-[34px] border-[#007AFF] border-[2px] rounded-md mt-2 cursor-pointer '>
         <FaMailchimp 
