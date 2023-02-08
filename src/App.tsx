@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Chat from './components/Chat';
+import Mails from './components/Mails';
+import Menubar from './components/Menubar';
+import Sidebar from './components/Sidebar';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-[#F7F7F7] h-screen w-screen  flex flex-row">
+    <Sidebar />
+    <Menubar />
+    <Mails />
+    <Chat 
+    profilePicture="https://resources-live.sketch.cloud/files/5470c7b9-ea34-407b-aaf3-24da407e2ca1.png?Expires=1676109600&Signature=k7Tvt0ushoGwWIsCbqUXtDUzX9-MRXM5L6jGNaiET2HIoS2nnQmwFfDNH00AHbdeZ4ycrrkdFwJje2L1immbefY8wM-mB-wS4xB3XtyxfZIS~xtVRjrhdie72vVOpZp8WIJHQZX8K3SqEg-LlIn5U~ANMYgHpTUnrDS8ocZcXN8_&Key-Pair-Id=APKAJOITMW3RWOLNNPYA"
+    name='Mark'
+    />
     </div>
   );
 }
